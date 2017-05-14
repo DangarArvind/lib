@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ebrima.ttf">
+            <string>Ebrima</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RearViewController" customModule="E_Menu" customModuleProvider="target">
+            <connections>
+                <outlet property="imgBG" destination="fcQ-ca-kX5" id="1yN-me-tAJ"/>
+                <outlet property="imgLogo" destination="XaY-Ev-Alm" id="yyD-uP-H5b"/>
+                <outlet property="imgStatus" destination="rPg-Nt-LHE" id="gff-8c-gyx"/>
+                <outlet property="lblAppName" destination="I6C-qT-8Gt" id="nOX-a2-hZM"/>
+                <outlet property="tblDrawer" destination="STs-9O-bgb" id="e3o-Sq-7yS"/>
+                <outlet property="view" destination="i1J-oP-c6P" id="LJH-wr-mFz"/>
+                <outlet property="viewMainDrawer" destination="HKj-5s-x5k" id="M6q-BX-SRg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i1J-oP-c6P">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatusbarBG" translatesAutoresizingMaskIntoConstraints="NO" id="rPg-Nt-LHE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="zK3-hl-lEh"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKj-5s-x5k">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SidemenuTop" translatesAutoresizingMaskIntoConstraints="NO" id="fcQ-ca-kX5"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrawerAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-Ev-Alm">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="XhC-Co-OK5"/>
+                                <constraint firstAttribute="height" constant="75" id="v8W-gw-ycD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP NAME HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-qT-8Gt">
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fcQ-ca-kX5" firstAttribute="height" secondItem="HKj-5s-x5k" secondAttribute="height" id="0Hd-mF-ISt"/>
+                        <constraint firstItem="fcQ-ca-kX5" firstAttribute="centerX" secondItem="HKj-5s-x5k" secondAttribute="centerX" id="2zP-MQ-tZA"/>
+                        <constraint firstItem="XaY-Ev-Alm" firstAttribute="leading" secondItem="HKj-5s-x5k" secondAttribute="leading" constant="25" id="LIZ-ok-2RN"/>
+                        <constraint firstAttribute="height" constant="165" id="QCl-op-o4H"/>
+                        <constraint firstItem="I6C-qT-8Gt" firstAttribute="top" secondItem="XaY-Ev-Alm" secondAttribute="bottom" constant="8" id="RPH-JP-LiD"/>
+                        <constraint firstAttribute="trailing" secondItem="I6C-qT-8Gt" secondAttribute="trailing" id="Si5-9k-4Sz"/>
+                        <constraint firstItem="XaY-Ev-Alm" firstAttribute="top" secondItem="HKj-5s-x5k" secondAttribute="top" constant="27" id="T8c-ew-5iu"/>
+                        <constraint firstItem="fcQ-ca-kX5" firstAttribute="centerY" secondItem="HKj-5s-x5k" secondAttribute="centerY" id="XTF-Rc-WSu"/>
+                        <constraint firstItem="I6C-qT-8Gt" firstAttribute="leading" secondItem="HKj-5s-x5k" secondAttribute="leading" constant="25" id="h9i-zC-mDt"/>
+                        <constraint firstAttribute="bottom" secondItem="I6C-qT-8Gt" secondAttribute="bottom" constant="22" id="hei-LO-a81"/>
+                        <constraint firstItem="fcQ-ca-kX5" firstAttribute="width" secondItem="HKj-5s-x5k" secondAttribute="width" id="hwr-YW-4aw"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="STs-9O-bgb">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jxd-5p-6EV"/>
+                        <outlet property="delegate" destination="-1" id="a0m-a7-fuK"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-7g-SkP">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RequestBill" translatesAutoresizingMaskIntoConstraints="NO" id="fdU-uD-dpK">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="8ZQ-rs-ZxH"/>
+                                <constraint firstAttribute="height" constant="25" id="RmW-j6-VUg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4o-EA-cOe">
+                            <fontDescription key="fontDescription" name="Ebrima" family="Ebrima" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Callservice" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-FZ-3wk">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="6J8-0R-UoF"/>
+                                <constraint firstAttribute="height" constant="25" id="K0C-CJ-sxs"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hw-80-LSu">
+                            <fontDescription key="fontDescription" name="Ebrima" family="Ebrima" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="E4o-EA-cOe" firstAttribute="centerY" secondItem="fdU-uD-dpK" secondAttribute="centerY" id="1Ry-vN-YCV"/>
+                        <constraint firstItem="fdU-uD-dpK" firstAttribute="top" secondItem="3AR-7g-SkP" secondAttribute="top" constant="30" id="7f2-NZ-2QQ"/>
+                        <constraint firstItem="5hw-80-LSu" firstAttribute="leading" secondItem="cR8-FZ-3wk" secondAttribute="trailing" constant="15" id="Lsf-iH-yYV"/>
+                        <constraint firstItem="cR8-FZ-3wk" firstAttribute="leading" secondItem="3AR-7g-SkP" secondAttribute="leading" constant="30" id="OuW-5W-RAn"/>
+                        <constraint firstItem="cR8-FZ-3wk" firstAttribute="top" secondItem="fdU-uD-dpK" secondAttribute="bottom" constant="30" id="PqW-LP-kv2"/>
+                        <constraint firstAttribute="height" constant="140" id="T2e-ps-9jc"/>
+                        <constraint firstItem="5hw-80-LSu" firstAttribute="centerY" secondItem="cR8-FZ-3wk" secondAttribute="centerY" id="Y0v-a0-RYk"/>
+                        <constraint firstItem="E4o-EA-cOe" firstAttribute="leading" secondItem="fdU-uD-dpK" secondAttribute="trailing" constant="15" id="lbY-qv-V1e"/>
+                        <constraint firstItem="fdU-uD-dpK" firstAttribute="leading" secondItem="3AR-7g-SkP" secondAttribute="leading" constant="30" id="og1-xC-DO3"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TableSeprator" translatesAutoresizingMaskIntoConstraints="NO" id="5QM-ET-9Wn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="STH-te-Ghf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3AR-7g-SkP" secondAttribute="trailing" id="0rl-Zv-uXf"/>
+                <constraint firstAttribute="trailing" secondItem="STs-9O-bgb" secondAttribute="trailing" id="2fv-5p-iUg"/>
+                <constraint firstAttribute="trailing" secondItem="HKj-5s-x5k" secondAttribute="trailing" id="FM1-xs-h2w"/>
+                <constraint firstItem="STs-9O-bgb" firstAttribute="top" secondItem="HKj-5s-x5k" secondAttribute="bottom" constant="5" id="IMQ-u0-Uai"/>
+                <constraint firstItem="3AR-7g-SkP" firstAttribute="top" secondItem="STs-9O-bgb" secondAttribute="bottom" id="Iym-k9-eAS"/>
+                <constraint firstItem="rPg-Nt-LHE" firstAttribute="top" secondItem="i1J-oP-c6P" secondAttribute="top" id="LX0-zR-lOu"/>
+                <constraint firstItem="5QM-ET-9Wn" firstAttribute="top" secondItem="STs-9O-bgb" secondAttribute="bottom" id="LyN-Wd-MH2"/>
+                <constraint firstItem="HKj-5s-x5k" firstAttribute="top" secondItem="i1J-oP-c6P" secondAttribute="top" constant="20" id="R2g-qd-06I"/>
+                <constraint firstItem="HKj-5s-x5k" firstAttribute="top" secondItem="rPg-Nt-LHE" secondAttribute="bottom" id="Sgj-BU-E4O"/>
+                <constraint firstItem="rPg-Nt-LHE" firstAttribute="leading" secondItem="i1J-oP-c6P" secondAttribute="leading" id="WIv-QV-O31"/>
+                <constraint firstAttribute="trailing" secondItem="rPg-Nt-LHE" secondAttribute="trailing" id="YRQ-8V-z2H"/>
+                <constraint firstItem="HKj-5s-x5k" firstAttribute="leading" secondItem="i1J-oP-c6P" secondAttribute="leading" id="aYd-Wd-Aah"/>
+                <constraint firstItem="5QM-ET-9Wn" firstAttribute="leading" secondItem="i1J-oP-c6P" secondAttribute="leading" constant="16" id="dLB-1e-ovy"/>
+                <constraint firstAttribute="trailing" secondItem="5QM-ET-9Wn" secondAttribute="trailing" constant="16" id="eXs-t0-G4p"/>
+                <constraint firstItem="3AR-7g-SkP" firstAttribute="leading" secondItem="i1J-oP-c6P" secondAttribute="leading" id="pBY-cZ-j0X"/>
+                <constraint firstItem="STs-9O-bgb" firstAttribute="leading" secondItem="i1J-oP-c6P" secondAttribute="leading" id="puh-ts-nbz"/>
+                <constraint firstAttribute="bottom" secondItem="3AR-7g-SkP" secondAttribute="bottom" id="y2f-v4-FDu"/>
+            </constraints>
+            <point key="canvasLocation" x="273.5" y="236.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Callservice" width="53" height="50"/>
+        <image name="DrawerAppIcon" width="82" height="54"/>
+        <image name="RequestBill" width="53" height="50"/>
+        <image name="SidemenuTop" width="744" height="318"/>
+        <image name="StatusbarBG" width="1024" height="768"/>
+        <image name="TableSeprator" width="314" height="2"/>
+    </resources>
+</document>
